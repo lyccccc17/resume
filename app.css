@@ -1,0 +1,52 @@
+* {
+    /* border: solid 1px; */
+    font-family: 微軟正黑體;
+    position: relative;
+    color: #fff; 
+    letter-spacing: 1px;
+
+}
+
+body, html{
+    width: 100%;
+    margin: 0px;
+    background-color: #72d0f4;
+}
+
+#app{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#app h1{
+    margin-top: 40px;
+    padding: 10px;
+    border: solid 1.2px #fff;
+}
+#app h1 span{
+    font-size: 13px;
+}
+#app .ex{
+    padding: 5px;
+    border-bottom: solid 1px rgb(97, 97, 97);
+}
+#app .ex p{
+    margin-left: 50px;
+}
+#app .ex .circles{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#app .circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #72d0f4;
+    cursor: pointer;
+    user-select: none;
+}

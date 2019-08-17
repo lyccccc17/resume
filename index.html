@@ -1,0 +1,55 @@
+<div id="app">
+    <section>
+        <h1>vue.js - watch 觀測
+            <span>(F12 查看 consloe)</span>
+        </h1>
+        <div class="ex">
+            <h2>一般數字</h2>
+            <p>number : {{ number }}</p>
+            <div class="circles">
+                <div class="circle" @click="number++">{{ number }}</div>
+            </div>
+            
+        </div>
+
+        <div class="ex">
+            <h2>一般物件</h2>
+            <p>obj : { num : {{ obj.num }} }</p>
+            <div class="circles">
+                <div class="circle" @click="obj.num++">{{ obj.num }}</div>
+            </div>
+            
+        </div>
+       
+        <div class="ex">
+            <h2>陣列包數字</h2>
+            <p>numberList : [ {{ numberList[0] }}, {{ numberList[1] }}, {{ numberList[2] }}]</p>
+            <div class="circles">
+                <div class="circle" v-for="(num, index) in numberList" 
+                    @click="numberListAdd(index)">{{ num }}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ex">
+            <h2>陣列包物件</h2>
+            <p>
+                objList : [
+                <span v-for="(obj, index) in objList">{ num : {{ obj.num }}} </span>
+                <span>]</span>
+            </p>
+            <div class="circles">
+                <div class="circle" v-for="(obj, index) in objList"
+                    @click="objListAdd(index)">{{ obj.num }}
+                </div>
+            </div>
+  
+        </div>
+    </section>
+</div>
+
+
+<link rel="stylesheet" href="app.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js'></script>
+<script src="script.js"></script>
